@@ -1,0 +1,8 @@
+<div *ngFor="let movie of movies$ | async">
+  <div>title: {{ movie.title }}</div>
+</div>
+
+<button (click)="addMovieWithUpdater()">Add Movie with with updater</button>
+
+<input type="text" [(ngModel)]="id" />
+<button (click)="find()">Find movie</button>

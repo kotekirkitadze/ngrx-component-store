@@ -1,0 +1,7 @@
+<div *ngFor="let movie of movies$ | async">
+  <div class="title">title: {{ movie.title }}</div>
+</div>
+
+<button (click)="resetState()">Reset State</button>
+<button (click)="addMovieWithSetState()">Add Movie with SetState</button>
+<button (click)="addMovieWithPatchState()">Add Movie with PatchState</button>
